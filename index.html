@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"">
+    <title>堀の写真...みたい？</title>
+    <script src="index.js"></script>
+    <style type="text/css">
+        
+        ul{
+            padding-left:0;
+            display: flex;
+            text-align: center;
+        }
+
+        li{
+            list-style:none;
+            width: 19%;
+        }
+
+        .buttons{
+        margin-left: 0px;
+        }
+        .btns{
+            height: 100px;
+            width: 100%;
+        }
+        .continer{
+            margin: 30px;
+        }
+        .color{
+            color: red;
+            margin: 0px;
+        }
+        .mains{
+            background-color: rgb(107, 107, 107);
+            height: 100%;
+            padding-bottom: 100px;
+        }
+        .imgs{
+            margin-top: 30px;
+            width: 100%;
+        }
+        .imgss{
+            margin-top: 30px;
+            width: 97.1%;
+        }
+        .imgs3{
+            margin-top: 30px;
+            width: 76%;
+        }
+        .imgs4{
+            margin-top: 30px;
+            width: 90.3%;
+        }
+        .imgs5{
+            margin-top: 30px;
+            width: 82.3%;
+        }
+        .imgs6{
+            margin-top: 30px;
+            width: 89%;
+        }
+        .imgs7{
+            margin-top: 30px;
+            width: 74.7%;
+        }
+        .imgs8{
+            margin-top: 30px;
+            width: 82%;
+        }
+        .imgs9{
+            margin-top: 30px;
+            width: 100.4%;
+        }
+        .imgs10{
+            margin-top: 30px;
+            width: 100.4%;
+        }
+        .imgs11{
+            margin-top: 30px;
+            width: 100.2%;
+        }
+        .imgs12{
+            margin-top: 30px;
+            width: 100.2%;
+        }
+        .imgs13{
+            margin-top: 30px;
+            width: 77%;
+        }
+        .imgs14{
+            margin-top: 30px;
+            width: 83.6%;
+        }
+        .imgs15{
+            margin-top: 30px;
+            width: 92.3%;
+        }
+        .imgs16{
+            margin-top: 30px;
+            width: 87%;
+        }
+        .imgs17{
+            margin-top: 30px;
+            width: 84.5%;
+        }
+        .imgs18{
+            margin-top: 30px;
+            width: 61.8%;
+        }
+        .imgs19{
+            margin-top: 30px;
+            width: 80.5%;
+        }
+        .imgs20{
+            margin-top: 30px;
+            width: 75%;
+        }
+        .imgs21{
+            margin-top: 30px;
+            width: 88.6%;
+        }
+        .imgs22{
+            margin-top: 30px;
+            width: 92.7%;
+        }
+        .imgs23{
+            margin-top: 30px;
+            width: 94.5%;
+        }
+        .clearbutton{
+            display: none;
+            color:red;
+            height: 100px;
+            width: 100%;
+        }
+        .pc{
+            color: red;
+        }
+        @media screen and (max-width: 480px) {
+	        /* 480px以下に適用されるCSS（スマホ用） */
+            li{
+                list-style:none;
+                width: 49%;
+            }
+            .pc{
+                color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="mains">
+        <fieldset disabled="disabled"><h1>ほりくん10連がちゃ!<span class="pc" id="pcs">PC版</span></h1><p class="color">※音が出るよ!</p></fieldset>
+        <div class="continer">
+            <div class="buttons">
+                <p>★☆☆☆☆...70%</p>
+                <p>★★☆☆☆...20%</p>
+                <p>★★★☆☆...6%</p>
+                <p>★★★★☆...3%</p>
+                <p>★★★★★...1%</p>
+                <p>君もレアな堀くんを出そう!</p>
+                <input type="button" value="回す!" class="btns" onclick="onbutton()" id="mainbtn">
+                <div class="say" id="says">
+                    <p class="color"></p>
+                </div>
+            </div>
+            <div class="imagediv">
+                <div class="make" id="addid">
+                </div>
+                <ul id="adds">
+                </ul>
+                <ul id="addss">
+                </ul>
+                <ul id="addsss">
+                </ul>
+                <ul id="addssss">
+                </ul>
+                <ul id="addsssss">
+                </ul>
+                <input type="button" class="clearbutton" value="もう一度挑戦!" id="imgss31" onclick="clears()">
+            </div>
+        </div>
+        
+    </div>
+    <audio id="btn_audio">
+        <source src="./sounds.mp3" type="audio/mp3" id="audio1">
+    </audio>
+    
+
+</body>
+</html>
